@@ -56,7 +56,7 @@ const Import = () => {
         </Typography>
       </Box>
       <Link
-        href={'/manage/dashboard'}
+        href={'/manage/import/users'}
         passHref
         style={{ textDecoration: 'none' }}
       >

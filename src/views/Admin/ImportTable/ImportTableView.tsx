@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import { Box, Breadcrumbs, Container, Typography } from '@mui/material';
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import Link from '@mui/material/Link';
 
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
@@ -13,6 +12,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Link from 'next/link';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.body}`]: {
@@ -54,7 +54,10 @@ const ImportTableView = () => {
           separator={<NavigateNextIcon fontSize="large" />}
           aria-label="breadcrumb"
         >
-          <Link style={{ textDecoration: 'none' }}>
+          <Link
+            style={{ textDecoration: 'none' }}
+            href={'/manage/dashboard/import'}
+          >
             <Typography
               sx={{
                 fontWeight: 700,
@@ -66,7 +69,10 @@ const ImportTableView = () => {
               Import
             </Typography>
           </Link>
-          <Link style={{ textDecoration: 'none' }}>
+          <Link
+            style={{ textDecoration: 'none' }}
+            href={'/manage/dashboard/import'}
+          >
             <Typography
               sx={{
                 fontWeight: 700,
